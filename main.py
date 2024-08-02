@@ -73,7 +73,7 @@ def simulate(datos, n_periodos = 12, simulaciones = 100, perc_cubierto = 70):
     fig.update_layout(
         title=f'Simulaciones de Pagos futuros ({perc_cubierto}% cubierto en Periodo {paso_umbral})',
         xaxis_title='Periodo',
-        yaxis_title='Monto Acumulado',
+        yaxis_title='Total pagado esperado ($)',
         showlegend=False
     )
 
