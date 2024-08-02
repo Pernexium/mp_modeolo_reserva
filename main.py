@@ -213,7 +213,7 @@ with col1:
 
     fig.update_layout(
         autosize=True,  # Ajustar automáticamente el tamaño
-        margin=dict(r=250, b=0)  # Eliminar márgenes para llenar el contenedor
+        #margin=dict(r=250, b=0)  # Eliminar márgenes para llenar el contenedor
     )
 
     st.plotly_chart(fig)
