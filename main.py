@@ -189,7 +189,7 @@ with col1:
     col1_.metric("Reserva a liberar", f"{num2curr(get_info('reserva'))}")
     
     col2_.metric("Vencido actual", f"{num2curr(get_info('vencido_actual'))}")
-    col2_.metric("Pares actuales", f"{num2curr(get_info('pares_actuales'))}")
+    col2_.metric("Pares actuales", f"{get_info('pares_actuales')}")
 
     
     
