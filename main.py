@@ -179,9 +179,9 @@ with col1:
     
     st.write("#")
     st.write("#")
-    st.write("#")
-    st.write("#")
-    st.write("#")
+    #st.write("#")
+    #st.write("#")
+    #st.write("#")
     
     fig = go.Figure()
     
