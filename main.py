@@ -114,7 +114,7 @@ clientes = {
         "total_adeudado": 10000.00,
         "vencido_actual": 5000.00,
         "promesas_pago": ["Sin promesa", "Cumplida", "promesa activa"],
-        "reserva": 1000,
+        "reserva": 990,
         "pares_actuales": "150 a 179"
     },
     "Ana García": {
@@ -134,7 +134,7 @@ clientes = {
         "total_adeudado": 8000.00,
         "vencido_actual": 3000.00,
         "promesas_pago": ["promesa mañana", "Sin promesa", "Cumplida"],
-        "reserva": 800,
+        "reserva": 770,
         "pares_actuales": "120 a 149"
     },
     "María López": {
@@ -144,7 +144,7 @@ clientes = {
         "total_adeudado": 9000.00,
         "vencido_actual": 6000.00,
         "promesas_pago": ["Sin promesa", "promesa activa", "No cumplida"],
-        "reserva": 900,
+        "reserva": 830,
         "pares_actuales": "150 a 179"
     },
     "Juan Martínez": {
@@ -154,7 +154,7 @@ clientes = {
         "total_adeudado": 24000.00,
         "vencido_actual": 4800.00,
         "promesas_pago": ["Cumplida", "promesa activa", "promesa mañana"],
-        "reserva": 2000,
+        "reserva": 2100,
         "pares_actuales": "120 a 149"
     }
 }
