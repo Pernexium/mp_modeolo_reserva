@@ -113,7 +113,9 @@ clientes = {
         "probabilidad_contacto": 85.0,  # Porcentaje
         "total_adeudado": 10000.00,
         "vencido_actual": 5000.00,
-        "promesas_pago": ["Sin promesa", "Cumplida", "promesa activa"]
+        "promesas_pago": ["Sin promesa", "Cumplida", "promesa activa"],
+        "reserva": 1000,
+        "pares_actuales": "150 a 179"
     },
     "Ana García": {
         "pagos": [5000.00, 2000.00, 1500.00, 2200.00],
@@ -121,7 +123,9 @@ clientes = {
         "probabilidad_contacto": 70.3,
         "total_adeudado": 12000.00,
         "vencido_actual": 4000.00,
-        "promesas_pago": ["No cumplida", "Cumplida"]
+        "promesas_pago": ["No cumplida", "Cumplida"],
+        "reserva": 1100,
+        "pares_actuales": "120 a 149"
     },
     "Luis Rodríguez": {
         "pagos": [1900.00, 2950.00, 1325.00, 1880.00],
@@ -129,7 +133,9 @@ clientes = {
         "probabilidad_contacto": 90.1,
         "total_adeudado": 8000.00,
         "vencido_actual": 3000.00,
-        "promesas_pago": ["promesa mañana", "Sin promesa", "Cumplida"]
+        "promesas_pago": ["promesa mañana", "Sin promesa", "Cumplida"],
+        "reserva": 800,
+        "pares_actuales": "120 a 149"
     },
     "María López": {
         "pagos": [3500.00, 2600.00, 1550.50],
@@ -137,7 +143,9 @@ clientes = {
         "probabilidad_contacto": 65.4,
         "total_adeudado": 9000.00,
         "vencido_actual": 6000.00,
-        "promesas_pago": ["Sin promesa", "promesa activa", "No cumplida"]
+        "promesas_pago": ["Sin promesa", "promesa activa", "No cumplida"],
+        "reserva": 900,
+        "pares_actuales": "150 a 179"
     },
     "Juan Martínez": {
         "pagos": [1100.00, 1150.00, 1050.50, 1250.00],
@@ -145,7 +153,9 @@ clientes = {
         "probabilidad_contacto": 82.5,
         "total_adeudado": 24000.00,
         "vencido_actual": 4800.00,
-        "promesas_pago": ["Cumplida", "promesa activa", "promesa mañana"]
+        "promesas_pago": ["Cumplida", "promesa activa", "promesa mañana"],
+        "reserva": 2000,
+        "pares_actuales": "120 a 149"
     }
 }
 
@@ -174,8 +184,14 @@ with col1:
     st.write(df_planes)
 
     col1_, col2_ = st.columns(2)
+    
     col1_.metric("Total adeudado", f"{num2curr(get_info('total_adeudado'))}")
+    col1_.metric("Reserva a liberar", f"{num2curr(get_info('reserva'))}")
+    
     col2_.metric("Vencido actual", f"{num2curr(get_info('vencido_actual'))}")
+    col2_.metric("Pares actuales", f"{num2curr(get_info('pares_actuales'))}")
+
+    
     
     st.write("#")
     st.write("#")
