@@ -79,7 +79,7 @@ def simulate(datos, n_periodos = 12, simulaciones = 100, perc_cubierto = 70):
 
     fig.update_layout(
         autosize=True,  # Ajustar automáticamente el tamaño
-        margin=dict(r=50, b=0)  # Eliminar márgenes para llenar el contenedor
+        #margin=dict(r=50, b=0)  # Eliminar márgenes para llenar el contenedor
     )
     
     return fig
