@@ -160,7 +160,7 @@ with col2:
 col1, col2 = st.columns(2)
 with col1:
     
-    st.write("#")
+    #st.write("#")
 
     st.subheader("Planes de pago:")
 
@@ -221,7 +221,7 @@ with col1:
     
 
 with col2:
-    st.write("#")
+    #st.write("#")
     col1_, col2_ = st.columns(2)
     with col1_:
         st.metric("Probabilidad de pago", f"{get_info('probabilidad_pago')}%")
