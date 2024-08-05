@@ -50,7 +50,7 @@ def simulate(datos, n_periodos = 12, simulaciones = 100, perc_cubierto = 70):
             x=np.arange(1, n_periodos + 1),
             y=camino,
             mode='lines',
-            line=dict(width=1, color='rgba(255, 255,255,0.1)'),
+            line=dict(width=1, color='rgba(0, 0,255,0.1)'),
             #name=f'{cliente} - Simulación'
         ))
     enter = False
