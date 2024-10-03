@@ -329,7 +329,7 @@ else:
     col4.metric("Consultas hasta el momento", f"{consultas_realizadas:,}")
     
     # Leyenda
-    st.markdown("**Fecha actual: 15 de octubre de 2024**")
+    st.markdown("**Última actualización: 15 de octubre de 2024**")
     
     # Gráfico de barras para la reserva liberada en el mes (crecimiento aleatorio)
     st.subheader("Reserva liberada en el mes")
